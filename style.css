@@ -5,6 +5,7 @@
 }
 body{
     background-color:grey;
+    border:1px solid olive;
 }
 h1{
     font-weight: bold;
@@ -20,12 +21,13 @@ h2{
 }
 a:link{
     color:purple;
+    text-decoration: none;
 }
 a:visited{
-    background-color: yellow;
+    color: yellow;
 }
 a:hover{
-    color:teal;
+    background-color:teal;
 }
 a:active{
     color:green;
