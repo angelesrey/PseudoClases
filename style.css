@@ -1,1 +1,32 @@
-Hola
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+body{
+    background-color:grey;
+}
+h1{
+    font-weight: bold;
+    font-size: 2em;
+    color:darkorchid;
+    text-align: center;
+    padding: 5px;
+}
+h2{
+    color:#800020;
+    text-align:center;
+    
+}
+a:link{
+    color:purple;
+}
+a:visited{
+    background-color: yellow;
+}
+a:hover{
+    color:teal;
+}
+a:active{
+    color:green;
+}
