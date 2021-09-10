@@ -1,34 +1,201 @@
 *{
-    margin:0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    padding:0px;
 }
 body{
-    background-color:grey;
-    border:1px solid olive;
-}
-h1{
-    font-weight: bold;
-    font-size: 2em;
-    color:darkorchid;
-    text-align: center;
-    padding: 5px;
-}
-h2{
-    color:#800020;
-    text-align:center;
+    border: 3px ridge grey;
+    margin: 10px;
+    padding: auto;
+    background-color:rgb(207, 205, 191);
     
 }
-a:link{
-    color:purple;
-    text-decoration: none;
+h1{
+    padding: 10px;
+    text-align: center;
+    color:olivedrab;
+    font-style:normal;
+    font-size: 3em;;
 }
-a:visited{
-    color: yellow;
+h3{
+    width:auto;
+    margin: 5px;
+    border: 2px solid limegreen;
+    background-color:lightgreen;
+    text-align: center;
 }
-a:hover{
-    background-color:teal;
+
+/*ACTIVE*/
+/*Enlaces no visitados*/
+a:link {color:rgb(206, 26, 223);
 }
-a:active{
-    color:green;
+/* Enlace visitado*/
+a:visited{ color:purple;
+}
+/*El usuario esta sobre el enlace*/
+a:hover {color:rgb(214, 28, 106);
+}
+/*Enlaces activos*/
+a:active {color:brown;
+}
+/*CHECKED*/
+div, select {margin: 10px;
+}
+/*Etiquetas para entradas marcadas */
+input:checked + label {color:rebeccapurple;
+}
+/*Elemento radio,cuando está marcado*/
+input[type="radio"]:checked {box-shadow: 0 0 0 3px yellowgreen;
+}
+/*Elemento Checkbox, cuando está marcado*/
+input[type="checkbox"]:checked {box-shadow: 0 0 0 3px hotpink;
+ }
+/*default*/
+input:default {box-shadow: 0 0 2px 1px coral;
+ }
+input:default + label {color:rgb(13, 68, 141);
+}
+:dir((ltr){
+    color:rgb(6, 6, 156);
+  
+}
+:dir(rtl){
+  color:rgb(72, 16, 124);
+
+}
+/*disable*/
+input[type="text"]:disabled {
+    background:orange;
+  }
+
+/*empty*/
+  .e {
+    padding: 5px;
+    background-color: coral;
+    height:auto;
+    width:auto;
+    
+  }
+   .e:empty {
+    height: 100px;
+    width: 100px;
+    background:orchid;
+}
+  /*enable*/
+  input:enabled {
+    color: #2b2;
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  /* First-child*/
+  }
+  .child:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  /*first-of-type*/
+  .firstOfType p:first-of-type{
+      color:lime;
+      font-style:italic;
+  }
+  /*fullscreen*/
+  #fullscreen:fullscreen {
+    padding: 42px;
+    background-color: pink;
+    border:2px solid #f00;
+    font-size: 200%;
+  }
+  #fullscreen:fullscreen > h3 {
+    color: red;
+  }
+  #fullscreen:fullscreen > p {
+    color: darkred;
+  }
+  
+  #fullscreen:fullscreen > button {
+    display: none;
+  }
+  /*focus*/
+  .red-input:focus{
+      background:yellow;
+      color:red;
+  }
+  .blue-input:focus{
+      background: yellow;
+      color:blue;
+  }
+  /*Hover*/
+  .hover{
+      background-color: powderblue;
+      transition: background-color .5s;
+  }
+  .hover:hover{
+      background-color: gold;
+  }
+  /*indeterminate*/
+  input:indeterminate + label {
+    background: lime;
+  }
+  /*In-range*/
+  li{
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  input{ 
+    border: 1px solid black;
+  }
+  input:in-range {
+    background-color:rgba(0, 255, 0, 0.25);
+  }
+  input:out-of-range {
+    background-color: rgba(0, 255, 0, 0.25);
+    border: 2px solid red;
+  }
+  input:in-range + label::after{
+    content:'bien.';
+  }
+  input:out-of-range + label::after{
+    content: 'fuera de rango!';
+  }
+/*Invalid*/
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #C00000;
+}
+/*Lang*/
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+/*Last-child*/
+.lchild{
+  color: rgb(63, 203, 207);
+  background-color: rgb(224, 210, 210);
+  padding: 10px;
 }

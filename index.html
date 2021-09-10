@@ -2,21 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudoclases</title>
-    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+        <meta name="title" content="PseudoClases">
+        <meta name="description" content="Ejemplos PseudoClases">
+        <link rel="stylesheet" href="./style.css"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases</title>
 </head>
 <body>
-    <h1>Pseudoclases</h1>
-    <h2>Active</h2>
-    <p>El enlace cambiará cuando se visite</p>
-    <p>Enlaces no visitados estará en morado </p>
-    <p>Enlaces visitados cambiarán a verde</p>
-    <p>Cuando el usuario esté sobre el link estará en rojo</p>
-    <p>Enlace activo en amarillo</p>
+<h1>PseudoClases</h1> 
+    <h3>Active</h3>
+<p>El enlace cambiará cuando se visite</p>
+<p>Enlaces no visitados estará en morado </p>
+<p>Enlaces visitados cambiarán a verde</p>
+<p>Cuando el usuario esté sobre el link estará en rojo</p>
+<p>Enlace activo en amarillo</p>
+<a href="www.google.com">Este enlace cambiará de color mientras se hace click sobre él.</a>
+<a href="https://www.youtube.com/" >Youtube</a>
 
-    <a href="https://www.youtube.com/" >Youtube</a>
-    
+
+<h3>Checked</h3>
+ <div>
+     <input type="radio" name="my-input" id="yes">
+     <label for="yes">Sí</label>
+     <input type="radio" name="my-input" id="no">
+     <label for="no">No</label>
+ </div>
+ <div>
+     <input type="checkbox" name="my-checkbox" id="opt-in">
+     <label for="opt-in">Check me!</label>
+ </div>
+ <select name="my-select" id="fruit">
+     <option value="opt1">Apples</option>
+     <option value="opt2">Grapes</option>
+     <option value="opt3">Pears</option>
+ </select>
+ <h3>Default</h3>
+ <p>¿Cu&aacute;l es tu animal favorito?</p>
+     <input type="radio" name="favorito" id="Perros">
+     <label for="Perro">Perros</label>
+     <input type="radio" name="favorito" id="Gatos">
+     <label for="Gatos">Gatos</label>
+     <input type="radio" name="favorito" id="Serpientes">
+     <label for="spring">Serpientes</label>
+     <input type="radio" name="favorito" id="Pericos">
+     <label for="spring">Pericos</label>
+<h3>Dir</h3>
+    <div dir="rtl">
+        <span>Lorem ipsum dolor sit amet.</span>
+        <div dir="ltr">Lorem ipsum dolor sit amet.
+        </div>
+            <div dir="auto">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    </div>     
+ 
+<h3>Disable</h3>
+<form action="#">
+  <fieldset id="shipping">
+    <legend>Dirección de Envío</legend>
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Dirección">
+    <input type="text" placeholder="Código postal">
+  </fieldset>
+  <br>
+  <fieldset id="billing">
+    <legend>Dirección de facturación</legend>
+    <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+    <input type="checkbox" id="billing-checkbox" checked>
+    <br>
+    <input type="text" placeholder="Nombre" disabled>
+    <input type="text" placeholder="Dirección" disabled>
+    <input type="text" placeholder="Código postal" disabled>
+  </fieldset>
+</form>
+<hr>
+<h3>Empty</h3>
+<div class="e">
+<p></p>
+<p>HOLA</p>
+<p></p>
+</div>
+<h3>Enable</h3>
+<form action="url_of_form">
+    <label for="FirstField">Primer campo (habilitado):</label>
+    <input type="text" id="FirstField" value="Lorem"><br>
+  
+    <label for="SecondField">Segundo campo (deshabilitado):</label>
+    <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+  
+    <input type="button" value="Enviar">
+  </form>
+<h3>First</h3>
+<p class="First">Primera página.</p>
+<p class="First">Segunda página.</p>
+<button>Imprimir!</button>
+<h3>First:child</h3>
+<div class="child">
+    <p>¡Este texto está seleccionado!</p>
+    <p>Este texto no está seleccionado.</p>
+  </div>
+  <div>
+    <h2>Este texto no está seleccionado: no es un `p`.</h2>
+    <p>Este texto no está seleccionado.</p>
+  </div>
+  <div id="firstOfType">
+<h3>First-of-type</h3>
+    <h2>Encabezado</h2>
+<p>P&aacute;rrafo 1</p>
+<p >P&aacute;rrafo 2</p>
+</div>
+    <div id="fullscreen">
+        <h3>Demostración fullscreen</h3>
+        <p>Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+        <button id="fullscreen-button">Entrar en pantalla completa</button>
+        <button onclick="closeFullScrreen">Close fullscreen</button>
+</div>
+<h3>Focus</h3>
+<input type="red-input"value="Voy a ser de color rojo cuando enfoque"><br>
+<input type="blue-input" value="Voy a ser de color azul cuando enfoque">
+<h3>Hover</h3>
+<a class="hover" href="#">Intenta pasar el mouse sobre este enlace</a>
+<h3>Indeterminate</h3>
+<div>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+  </div>
+  <div>
+    <input type="radio" id="radio">
+    <label for="radio">Esta etiqueta comienza con el color lima.</label>
+  </div>
+  <h3>In-range</h3>
+  <form action="" id="form1">
+    <ul>Los valores entre 1 y 10 son v&aacute;lidos.
+      <li>
+        <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+        <label for="value1">Tu valor esta</label>
+      </li>
+    </ul>
+  </form>
+<h3>Invalid</h3>
+<form>
+  <label for="url_input">ingresa una URL:</label>
+  <input type="url" id="url_input" />
+  <br/>
+  <br/>
+  <label for="email_input">Introduzca una direcci&oacute;n de correo electr&oacute;nico:</label>
+  <input type="email" id="email_input" required>
+</form>
+<h3>Lang</h3>
+<div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+<div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+<div lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+
+<h3>Last child</h3>
+<div class="lchild">
+  <p >Este texto no está seleccionado.</p>
+  <p>¡Este texto está seleccionado!</p>
+
+  <p>Este texto no está seleccionado.</p>
+  <h2>Este texto no está seleccionado: no es un `p`.</h2>
+</div>
+
+
 </body>
 </html>
